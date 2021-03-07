@@ -16,6 +16,7 @@ class _HomeState extends State<Home> {
       ),
       body: SafeArea(
         child: Container(
+          width: MediaQuery.of(context).size.width,
           padding: EdgeInsets.all(20.0),
           child: SingleChildScrollView(
             child: Column(
