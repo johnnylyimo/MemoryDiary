@@ -11,6 +11,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
+        title: Text('Memory Diary'),
       ),
     );
   }
