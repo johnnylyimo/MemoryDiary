@@ -14,7 +14,9 @@ class _HomeState extends State<Home> {
         title: Text('Memory Diary'),
       ),
       body: SafeArea(
-        child: Container(),
+        child: Container(
+          child: SingleChildScrollView(),
+        ),
       ),
     );
   }
