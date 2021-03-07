@@ -13,6 +13,7 @@ class _HomeState extends State<Home> {
         centerTitle: true,
         title: Text('Memory Diary'),
       ),
+      body: SafeArea(),
     );
   }
 }
