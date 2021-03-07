@@ -17,7 +17,12 @@ class _HomeState extends State<Home> {
         child: Container(
           child: SingleChildScrollView(
             child: Column(
-              children: [Container()],
+              children: [
+                Container(
+                  child: Text(
+                      'WORD OF THE DAY\nToday will be better than yesterday'),
+                ),
+              ],
             ),
           ),
         ),
