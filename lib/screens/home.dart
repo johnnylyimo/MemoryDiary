@@ -17,6 +17,7 @@ class _HomeState extends State<Home> {
       ),
       body: SafeArea(
         child: Container(
+          decoration: BoxDecoration(border: Border.all()),
           width: MediaQuery.of(context).size.width,
           padding: EdgeInsets.all(20.0),
           child: SingleChildScrollView(
@@ -31,6 +32,10 @@ class _HomeState extends State<Home> {
                     textAlign: TextAlign.center,
                   ),
                 ),
+                Text(
+                  'Highlights',
+                  textAlign: TextAlign.right,
+                )
               ],
             ),
           ),
