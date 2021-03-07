@@ -13,6 +13,9 @@ import 'package:path_provider/path_provider.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 void main() async {
+  // Before execute runApp execute following codes below
+  WidgetsFlutterBinding.ensureInitialized();
+
   // initialize hive
   await Hive.initFlutter();
   runApp(MyApp());
