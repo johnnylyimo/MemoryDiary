@@ -1,7 +1,7 @@
 /*
  * App: MemoryDiary
  * Purpose: This app let you  keep track and note down your memorable events that occur everyday.
- * Deverloper: Johnny Lyimo
+ * Developer: Johnny Lyimo
  * Technologies Used: Hive Database
  * CreatedOn: March 7, 2021
  */
