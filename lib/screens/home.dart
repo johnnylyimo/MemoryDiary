@@ -19,6 +19,7 @@ class _HomeState extends State<Home> {
             child: Column(
               children: [
                 Container(
+                  padding: EdgeInsets.all(20.0),
                   child: Text(
                       'WORD OF THE DAY\nToday will be better than yesterday'),
                 ),
