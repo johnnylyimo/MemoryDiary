@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -25,7 +26,9 @@ class _HomeState extends State<Home> {
                   color: Colors.blue.shade100,
                   padding: EdgeInsets.all(20.0),
                   child: Text(
-                      'WORD OF THE DAY\nToday will be better than yesterday'),
+                    'WORD OF THE DAY\nToday will be better than yesterday',
+                    textAlign: TextAlign.center,
+                  ),
                 ),
               ],
             ),
