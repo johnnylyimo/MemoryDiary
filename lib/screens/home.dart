@@ -24,6 +24,7 @@ class _HomeState extends State<Home> {
               children: [
                 Container(
                   color: Colors.blue.shade100,
+                  margin: EdgeInsets.all(10.0),
                   padding: EdgeInsets.all(20.0),
                   child: Text(
                     'WORD OF THE DAY\nToday will be better than yesterday',
