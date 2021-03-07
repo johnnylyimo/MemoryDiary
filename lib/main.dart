@@ -1,3 +1,11 @@
+/*
+ * App: MemoryDiary
+ * Purpose: This app let you  keep track and note down your memorable events that occur everyday.
+ * Deverloper: Johnny Lyimo
+ * Technologies Used: Hive Database
+ * CreatedOn: March 7, 2021
+ */
+
 import 'package:flutter/material.dart';
 import 'package:memory_diary/screens/home.dart';
 import 'package:hive/hive.dart';
