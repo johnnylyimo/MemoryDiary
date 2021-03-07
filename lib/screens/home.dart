@@ -16,7 +16,9 @@ class _HomeState extends State<Home> {
       body: SafeArea(
         child: Container(
           child: SingleChildScrollView(
-            child: Column(),
+            child: Column(
+              children: [Container()],
+            ),
           ),
         ),
       ),
