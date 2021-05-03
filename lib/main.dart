@@ -30,7 +30,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      routes: {},
+      routes: {
+        '/': (_) => Home(),
+      },
       home: Home(),
     );
   }
