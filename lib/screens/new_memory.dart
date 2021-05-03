@@ -9,6 +9,7 @@ class NewMemory extends StatefulWidget {
 
 class _NewMemoryState extends State<NewMemory> {
   var new_memoryController = TextEditingController();
+  var _formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,6 +21,7 @@ class _NewMemoryState extends State<NewMemory> {
         padding: EdgeInsets.all(20.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          children: [],
         ),
       ),
     );
