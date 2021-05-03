@@ -10,6 +10,8 @@ class NewMemory extends StatefulWidget {
 class _NewMemoryState extends State<NewMemory> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(),
+    );
   }
 }
