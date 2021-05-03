@@ -17,6 +17,7 @@ class _HomeState extends State<Home> {
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
+        onPressed: () => Navigator.pushNamed(context, '/new_memory'),
       ),
       body: SafeArea(
         child: Container(
