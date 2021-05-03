@@ -10,6 +10,7 @@ import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:memory_diary/screens/home.dart';
+import 'package:memory_diary/screens/new_memory.dart';
 
 void main() async {
   // Before execute runApp execute following codes below
@@ -30,7 +31,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      routes: {'/': (_) => Home(), '/new_memory': (_) => NewMemory()},
+      routes: {
+        '/': (_) => Home(),
+        '/new_memory': (_) => NewMemory(),
+      },
       initialRoute: '/',
     );
   }
