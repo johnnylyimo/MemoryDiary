@@ -15,7 +15,9 @@ class _NewMemoryState extends State<NewMemory> {
         centerTitle: true,
         title: Text('New Memory'),
       ),
-      body: Container(),
+      body: Container(
+        padding: EdgeInsets.all(20.0),
+      ),
     );
   }
 }
