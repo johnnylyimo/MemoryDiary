@@ -11,7 +11,9 @@ class _NewMemoryState extends State<NewMemory> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        centerTitle: true,
+      ),
     );
   }
 }
