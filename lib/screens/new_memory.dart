@@ -15,6 +15,7 @@ class _NewMemoryState extends State<NewMemory> {
         centerTitle: true,
         title: Text('New Memory'),
       ),
+      body: Container(),
     );
   }
 }
