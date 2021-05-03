@@ -13,6 +13,7 @@ class _NewMemoryState extends State<NewMemory> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
+        title: Text('New Memory'),
       ),
     );
   }
