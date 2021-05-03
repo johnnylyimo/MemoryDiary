@@ -9,7 +9,7 @@ class NewMemory extends StatefulWidget {
 
 class _NewMemoryState extends State<NewMemory> {
   var new_memoryController = TextEditingController();
-  var _formKey = GlobalKey<FormState>();
+  final _formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,6 +25,7 @@ class _NewMemoryState extends State<NewMemory> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               TextFormField(
+                controller: new_memoryController,
                 decoration: InputDecoration(
                   labelText: 'Write you memory here..',
                 ),
