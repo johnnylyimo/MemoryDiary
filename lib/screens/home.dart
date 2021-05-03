@@ -15,7 +15,9 @@ class _HomeState extends State<Home> {
         centerTitle: true,
         title: Text('Memory Diary'),
       ),
-      floatingActionButton: FloatingActionButton(),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+      ),
       body: SafeArea(
         child: Container(
           decoration: BoxDecoration(border: Border.all()),
