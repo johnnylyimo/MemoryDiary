@@ -31,7 +31,9 @@ class _NewMemoryState extends State<NewMemory> {
                 ),
                 validator: (val) => val.isNotEmpty ? null : 'Enter your memory',
               ),
-              SizedBox()
+              SizedBox(
+                height: 30.0,
+              )
             ],
           ),
         ),
