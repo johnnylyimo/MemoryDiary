@@ -22,7 +22,9 @@ class _NewMemoryState extends State<NewMemory> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Form(),
+            Form(
+              key: _formKey,
+            ),
           ],
         ),
       ),
