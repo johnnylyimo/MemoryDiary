@@ -25,7 +25,9 @@ class _NewMemoryState extends State<NewMemory> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               TextFormField(
-                decoration: InputDecoration(),
+                decoration: InputDecoration(
+                  labelText: 'Write you memory here..',
+                ),
               ),
             ],
           ),
