@@ -29,6 +29,7 @@ class _NewMemoryState extends State<NewMemory> {
                 decoration: InputDecoration(
                   labelText: 'Write you memory here..',
                 ),
+                validator: (val) => val.isNotEmpty ? null : 'Enter your memory',
               ),
             ],
           ),
