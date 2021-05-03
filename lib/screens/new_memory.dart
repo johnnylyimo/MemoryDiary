@@ -19,13 +19,12 @@ class _NewMemoryState extends State<NewMemory> {
       ),
       body: Container(
         padding: EdgeInsets.all(20.0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Form(
-              key: _formKey,
-            ),
-          ],
+        child: Form(
+          key: _formKey,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [],
+          ),
         ),
       ),
     );
