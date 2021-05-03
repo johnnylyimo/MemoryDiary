@@ -21,7 +21,9 @@ class _NewMemoryState extends State<NewMemory> {
         padding: EdgeInsets.all(20.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [],
+          children: [
+            Form(),
+          ],
         ),
       ),
     );
