@@ -8,6 +8,7 @@ class NewMemory extends StatefulWidget {
 }
 
 class _NewMemoryState extends State<NewMemory> {
+  var new_memoryController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
