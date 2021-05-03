@@ -17,6 +17,7 @@ class _NewMemoryState extends State<NewMemory> {
       ),
       body: Container(
         padding: EdgeInsets.all(20.0),
+        child: Column(),
       ),
     );
   }
