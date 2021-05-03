@@ -33,9 +33,10 @@ class _NewMemoryState extends State<NewMemory> {
               ),
               SizedBox(
                 height: 30.0,
-              )
+              ),
               ElevatedButton(
                 child: Text('Submit'),
+                onPressed: () {},
               )
             ],
           ),
