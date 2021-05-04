@@ -7,6 +7,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  var box = Hive.box('memory');
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -46,7 +47,7 @@ class _HomeState extends State<Home> {
                 Text(
                   'Highlights',
                   textAlign: TextAlign.right,
-                )
+                ),
               ],
             ),
           ),
