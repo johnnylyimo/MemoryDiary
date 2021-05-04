@@ -26,6 +26,7 @@ class _HomeState extends State<Home> {
           padding: EdgeInsets.all(20.0),
           child: SingleChildScrollView(
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
                   color: Colors.blue.shade100,
