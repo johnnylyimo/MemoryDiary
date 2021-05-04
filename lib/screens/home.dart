@@ -29,6 +29,7 @@ class _HomeState extends State<Home> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Align(
+                  alignment: Alignment.center,
                   child: Container(
                     color: Colors.blue.shade100,
                     margin: EdgeInsets.all(10.0),
