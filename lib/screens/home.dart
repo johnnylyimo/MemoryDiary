@@ -40,7 +40,9 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                 ),
-                SizedBox(),
+                SizedBox(
+                  height: 30.0,
+                ),
                 Text(
                   'Highlights',
                   textAlign: TextAlign.right,
