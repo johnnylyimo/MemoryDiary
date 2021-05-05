@@ -71,7 +71,7 @@ class _HomeState extends State<Home> {
                     builder: (context, Box<String> box, _) {
                       return MemoryBox.length != 0
                           ? ListView.builder(
-                              itemCount: MemoryBox.length,
+                              itemCount: box.length,
                               itemBuilder: (context, index) {
                                 var memories = MemoryBox.toMap();
                                 return Card(
