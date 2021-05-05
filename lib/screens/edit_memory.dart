@@ -17,6 +17,7 @@ class _EditMemoryState extends State<EditMemory> {
 
   @override
   Widget build(BuildContext context) {
+    memoryController.text = widget.memory;
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
