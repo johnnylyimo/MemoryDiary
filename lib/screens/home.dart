@@ -62,6 +62,7 @@ class _HomeState extends State<Home> {
                             return Card(
                               child: ListTile(
                                 leading: Icon(Icons.notes),
+                                title: Text(memories[index]),
                               ),
                             );
                           },
