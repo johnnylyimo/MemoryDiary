@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:hive/hive.dart';
+import 'package:memory_diary/screens/edit_memory.dart';
 
 class Home extends StatefulWidget {
   @override
