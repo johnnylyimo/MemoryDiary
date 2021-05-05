@@ -56,6 +56,7 @@ class _EditMemoryState extends State<EditMemory> {
                     ),
                     ElevatedButton(
                       child: Text('Update'),
+                      style: ButtonStyle(),
                       onPressed: () {},
                     )
                   ],
