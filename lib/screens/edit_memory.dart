@@ -12,6 +12,6 @@ class EditMemory extends StatefulWidget {
 class _EditMemoryState extends State<EditMemory> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }
