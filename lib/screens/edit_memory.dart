@@ -30,6 +30,9 @@ class _EditMemoryState extends State<EditMemory> {
               children: [
                 TextFormField(
                   controller: memoryController,
+                  decoration: InputDecoration(
+                    labelText: 'Be free to Edit this  memory',
+                  ),
                 ),
               ],
             ),
