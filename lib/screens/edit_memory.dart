@@ -22,6 +22,11 @@ class _EditMemoryState extends State<EditMemory> {
   }
 
   @override
+  void dispose() {
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     memoryController.text = widget.memory;
     return Scaffold(
