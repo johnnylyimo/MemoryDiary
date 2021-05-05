@@ -20,6 +20,11 @@ class _NewMemoryState extends State<NewMemory> {
   }
 
   @override
+  void dispose() {
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
