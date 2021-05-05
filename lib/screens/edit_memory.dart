@@ -25,6 +25,7 @@ class _EditMemoryState extends State<EditMemory> {
       ),
       body: SafeArea(
         child: Container(
+          padding: EdgeInsets.only(left: 30.0, right: 30.0),
           child: Form(
             key: _formKey,
             child: Column(
