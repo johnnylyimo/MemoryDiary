@@ -33,6 +33,8 @@ class _EditMemoryState extends State<EditMemory> {
                   decoration: InputDecoration(
                     labelText: 'Be free to Edit this  memory',
                   ),
+                  validator: (val) =>
+                      val.isNotEmpty ? null : 'Enter your memory',
                 ),
               ],
             ),
