@@ -14,6 +14,7 @@ class _HomeState extends State<Home> {
   @override
   void initState() {
     super.initState();
+    Memorybox = Hive.box('memory');
   }
 
   @override
