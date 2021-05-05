@@ -59,7 +59,9 @@ class _HomeState extends State<Home> {
                           itemCount: box.length,
                           itemBuilder: (context, index) {
                             var memories = box.toMap().values.toList();
-                            return Card();
+                            return Card(
+                              child: ListTile(),
+                            );
                           },
                         )
                       : Text(
