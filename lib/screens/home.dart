@@ -57,6 +57,7 @@ class _HomeState extends State<Home> {
                     child: ListView.builder(
                       itemCount: box.length,
                       itemBuilder: (context, index) {
+                        var memories = box.toMap().values.toList();
                         return Card();
                       },
                     ))
