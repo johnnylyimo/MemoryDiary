@@ -54,6 +54,7 @@ class _HomeState extends State<Home> {
                 ),
                 Container(
                   height: MediaQuery.of(context).size.height,
+                  child: ListView.builder(),
                 )
               ],
             ),
