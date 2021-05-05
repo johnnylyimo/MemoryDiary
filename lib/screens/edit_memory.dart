@@ -49,6 +49,7 @@ class _EditMemoryState extends State<EditMemory> {
                   children: [
                     ElevatedButton(
                       child: Text('Delete'),
+                      style: ButtonStyle(),
                       onPressed: () {},
                     ),
                     SizedBox(
