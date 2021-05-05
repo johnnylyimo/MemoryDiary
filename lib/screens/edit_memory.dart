@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class EditMemory extends StatefulWidget {
-  const EditMemory({Key key}) : super(key: key);
+  final String memory;
+  const EditMemory({Key key, this.memory, this.memoryKey}) : super(key: key);
 
   @override
   _EditMemoryState createState() => _EditMemoryState();
