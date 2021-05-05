@@ -14,6 +14,7 @@ class _EditMemoryState extends State<EditMemory> {
   var memoryController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
   Box<String> box = Hive.box('memory');
+
   @override
   void initState() {
     super.initState();

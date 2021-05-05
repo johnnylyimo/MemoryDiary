@@ -9,7 +9,7 @@ class NewMemory extends StatefulWidget {
 }
 
 class _NewMemoryState extends State<NewMemory> {
-  var new_memoryController = TextEditingController();
+  var memoryController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
   Box<String> box;
 
@@ -34,7 +34,7 @@ class _NewMemoryState extends State<NewMemory> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               TextFormField(
-                controller: new_memoryController,
+                controller: memoryController,
                 maxLines: 2,
                 textAlign: TextAlign.center,
                 decoration: InputDecoration(
@@ -48,8 +48,7 @@ class _NewMemoryState extends State<NewMemory> {
               ElevatedButton(
                 child: Text('Submit'),
                 onPressed: () {
-                  // add item value with auto increment assign primary key index
-                  box.add(new_memoryController.text);
+                  box.add(memoryController.text);
                   Navigator.pop(context);
                 },
               ),
