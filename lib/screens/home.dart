@@ -70,6 +70,7 @@ class _HomeState extends State<Home> {
                                   memories.values.elementAt(index),
                                   maxLines: 2,
                                 ),
+                                onTap: () {},
                               ),
                             );
                           },
