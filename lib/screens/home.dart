@@ -70,7 +70,14 @@ class _HomeState extends State<Home> {
                                   memories.values.elementAt(index),
                                   maxLines: 2,
                                 ),
-                                onTap: () {},
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => EditMemory(),
+                                    ),
+                                  );
+                                },
                               ),
                             );
                           },
