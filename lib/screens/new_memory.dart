@@ -36,6 +36,7 @@ class _NewMemoryState extends State<NewMemory> {
               TextFormField(
                 controller: memoryController,
                 maxLines: 2,
+                keyboardType: TextInputType.multiline,
                 textAlign: TextAlign.center,
                 decoration: InputDecoration(
                   labelText: 'Write you memory here..',
