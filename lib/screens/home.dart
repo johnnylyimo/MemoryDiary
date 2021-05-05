@@ -75,7 +75,10 @@ class _HomeState extends State<Home> {
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                      builder: (context) => EditMemory(),
+                                      builder: (context) => EditMemory(
+                                        memory:
+                                            memories.values.elementAt(index),
+                                      ),
                                     ),
                                   );
                                 },
