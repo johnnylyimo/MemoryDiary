@@ -24,6 +24,7 @@ class _EditMemoryState extends State<EditMemory> {
   @override
   void dispose() {
     super.dispose();
+    memoryController.dispose();
   }
 
   @override
