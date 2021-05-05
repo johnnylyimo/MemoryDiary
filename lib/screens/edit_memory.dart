@@ -38,6 +38,7 @@ class _EditMemoryState extends State<EditMemory> {
                   validator: (val) =>
                       val.isNotEmpty ? null : 'Enter your memory',
                 ),
+                SizedBox()
               ],
             ),
           ),
