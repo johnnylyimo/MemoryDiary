@@ -56,6 +56,7 @@ class _NewMemoryState extends State<NewMemory> {
                 child: Text('Submit'),
                 onPressed: () {
                   box.add(memoryController.text);
+                  memoryController.clear();
                   Navigator.pop(context);
                 },
               ),
