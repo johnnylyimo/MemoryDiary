@@ -70,7 +70,7 @@ class _HomeState extends State<Home> {
                       ? ListView.builder(
                           itemCount: Memorybox.length,
                           itemBuilder: (context, index) {
-                            var memories = box.toMap();
+                            var memories = Memorybox.toMap();
                             return Card(
                               child: ListTile(
                                 leading: Icon(Icons.notes),
