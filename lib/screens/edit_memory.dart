@@ -44,7 +44,7 @@ class _EditMemoryState extends State<EditMemory> {
                 Row(
                   children: [
                     ElevatedButton(
-
+                      child: Text('Delete'),
                     )
                   ],
                 )
