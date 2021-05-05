@@ -42,6 +42,7 @@ class _EditMemoryState extends State<EditMemory> {
                   controller: memoryController,
                   maxLines: 2,
                   textAlign: TextAlign.center,
+                  keyboardType: TextInputType.multiline,
                   decoration: InputDecoration(
                     labelText: 'Be free to Edit this  memory',
                   ),
