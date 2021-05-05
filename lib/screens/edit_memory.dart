@@ -48,7 +48,7 @@ class _EditMemoryState extends State<EditMemory> {
                       onPressed: () {},
                     ),
                     SizedBox(
-
+                      height: 20.0,
                     )
                   ],
                 )
