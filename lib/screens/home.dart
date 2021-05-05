@@ -78,6 +78,8 @@ class _HomeState extends State<Home> {
                                       builder: (context) => EditMemory(
                                         memory:
                                             memories.values.elementAt(index),
+                                        memoryKey:
+                                            memories.keys.elementAt(index),
                                       ),
                                     ),
                                   );
