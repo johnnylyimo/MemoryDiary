@@ -11,6 +11,7 @@ class EditMemory extends StatefulWidget {
 
 class _EditMemoryState extends State<EditMemory> {
   var memoryController = TextEditingController();
+  final _formKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
