@@ -9,7 +9,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  var box = Hive.box('test');
+  Box<String> memoryBox;
 
   @override
   Widget build(BuildContext context) {
