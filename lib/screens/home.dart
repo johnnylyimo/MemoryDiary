@@ -47,6 +47,9 @@ class _HomeState extends State<Home> {
                 ),
                 Text(
                   'Highlights',
+                  style: TextStyle(
+                    fontSize: 20.0,
+                  ),
                   textAlign: TextAlign.right,
                 ),
                 SizedBox(
