@@ -66,35 +66,37 @@ class _HomeState extends State<Home> {
                 ),
                 Container(
                   height: MediaQuery.of(context).size.height,
-                  child: Memorybox.length != 0
-                      ? ListView.builder(
-                          itemCount: Memorybox.length,
-                          itemBuilder: (context, index) {
-                            var memories = Memorybox.toMap();
-                            return Card(
-                              child: ListTile(
-                                leading: Icon(Icons.notes),
-                                title: Text(
-                                  memories.values.elementAt(index),
-                                  maxLines: 2,
-                                ),
-                                onTap: () {
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                      builder: (context) => EditMemory(
-                                        memory:
-                                            memories.values.elementAt(index),
-                                        memoryKey:
-                                            memories.keys.elementAt(index),
+                  child: ValueListenableBuilder(
+                        child:Memorybox.length != 0
+                            ?  ListView.builder(
+                            itemCount: Memorybox.length,
+                            itemBuilder: (context, index) {
+                              var memories = Memorybox.toMap();
+                              return Card(
+                                child: ListTile(
+                                  leading: Icon(Icons.notes),
+                                  title: Text(
+                                    memories.values.elementAt(index),
+                                    maxLines: 2,
+                                  ),
+                                  onTap: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => EditMemory(
+                                          memory:
+                                              memories.values.elementAt(index),
+                                          memoryKey:
+                                              memories.keys.elementAt(index),
+                                        ),
                                       ),
-                                    ),
-                                  );
-                                },
-                              ),
-                            );
-                          },
-                        )
+                                    );
+                                  },
+                                ),
+                              );
+                            },
+                          ),
+                      )
                       : Text(
                           'No Memory\nAdd your memory by click plus button below'),
                 )
