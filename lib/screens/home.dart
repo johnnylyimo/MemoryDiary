@@ -69,6 +69,7 @@ class _HomeState extends State<Home> {
                   height: MediaQuery.of(context).size.height,
                   child: ValueListenableBuilder(
                     valueListenable: MemoryBox.listenable(),
+                        builder: (context, Box<String>box, _),
                         child:MemoryBox.length != 0
                             ?  ListView.builder(
                             itemCount: MemoryBox.length,
