@@ -54,13 +54,13 @@ class _HomeState extends State<Home> {
                 ),
                 Container(
                     height: MediaQuery.of(context).size.height,
-                    child: ListView.builder(
+                    child: box.length != 0 ? ListView.builder(
                       itemCount: box.length,
                       itemBuilder: (context, index) {
                         var memories = box.toMap().values.toList();
                         return Card();
                       },
-                    ))
+                    ),)
               ],
             ),
           ),
