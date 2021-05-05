@@ -50,6 +50,7 @@ class _NewMemoryState extends State<NewMemory> {
                 onPressed: () {
                   // add item value with auto increment assign primary key index
                   box.add(new_memoryController.text);
+                  Navigator.pop(context);
                 },
               ),
             ],
