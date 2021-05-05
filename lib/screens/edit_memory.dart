@@ -66,7 +66,9 @@ class _EditMemoryState extends State<EditMemory> {
                           Colors.blue,
                         ),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        box.put(widget.memoryKey, memoryController.text);
+                      },
                     )
                   ],
                 )
