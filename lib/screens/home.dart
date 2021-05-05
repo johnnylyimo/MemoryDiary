@@ -49,6 +49,7 @@ class _HomeState extends State<Home> {
                   'Highlights',
                   style: TextStyle(
                     fontSize: 20.0,
+                    fontWeight: FontWeight.bold,
                   ),
                   textAlign: TextAlign.right,
                 ),
