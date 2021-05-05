@@ -18,7 +18,8 @@ void main() async {
 
   // initialize hive
   await Hive.initFlutter();
-  runApp(MyApp());
+  await Hive.openBox('test');
+  runApp(ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
