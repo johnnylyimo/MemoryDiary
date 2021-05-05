@@ -22,6 +22,7 @@ class _NewMemoryState extends State<NewMemory> {
   @override
   void dispose() {
     super.dispose();
+    memoryController.dispose();
   }
 
   @override
