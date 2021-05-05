@@ -29,6 +29,7 @@ class _EditMemoryState extends State<EditMemory> {
           child: Form(
             key: _formKey,
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 TextFormField(
                   controller: memoryController,
