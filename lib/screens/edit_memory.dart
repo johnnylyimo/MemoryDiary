@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hive/hive.dart';
 
 class EditMemory extends StatefulWidget {
   final String memory;
