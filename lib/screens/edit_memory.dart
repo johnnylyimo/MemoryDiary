@@ -41,7 +41,13 @@ class _EditMemoryState extends State<EditMemory> {
                 SizedBox(
                   height: 30.0,
                 ),
-                Row()
+                Row(
+                  children: [
+                    ElevatedButton(
+
+                    )
+                  ],
+                )
               ],
             ),
           ),
