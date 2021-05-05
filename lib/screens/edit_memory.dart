@@ -48,7 +48,7 @@ class _EditMemoryState extends State<EditMemory> {
                       onPressed: () {},
                     ),
                     SizedBox(
-                      width: 20.0,
+                      width: 30.0,
                     ),
                     ElevatedButton(
                       child: Text('Update'),
