@@ -67,7 +67,7 @@ class _HomeState extends State<Home> {
                               child: ListTile(
                                 leading: Icon(Icons.notes),
                                 title: Text(
-                                  memories[index],
+                                  memories.values.elementAt(index),
                                   maxLines: 2,
                                 ),
                               ),
