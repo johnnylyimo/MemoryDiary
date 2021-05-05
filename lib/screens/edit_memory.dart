@@ -44,6 +44,7 @@ class _EditMemoryState extends State<EditMemory> {
                   height: 30.0,
                 ),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     ElevatedButton(
                       child: Text('Delete'),
