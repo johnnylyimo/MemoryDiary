@@ -56,6 +56,7 @@ class _EditMemoryState extends State<EditMemory> {
                       ),
                       onPressed: () {
                         box.delete(widget.memoryKey);
+                        Navigator.pop(context);
                       },
                     ),
                     SizedBox(
