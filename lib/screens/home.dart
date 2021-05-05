@@ -9,12 +9,12 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  Box<String> Memorybox;
+  Box<String> MemoryBox;
 
   @override
   void initState() {
     super.initState();
-    Memorybox = Hive.box('memory');
+    MemoryBox = Hive.box('memory');
   }
 
   @override
@@ -67,11 +67,12 @@ class _HomeState extends State<Home> {
                 Container(
                   height: MediaQuery.of(context).size.height,
                   child: ValueListenableBuilder(
-                        child:Memorybox.length != 0
+                    valueListenable: MemoryBox.listenable(),
+                        child:MemoryBox.length != 0
                             ?  ListView.builder(
-                            itemCount: Memorybox.length,
+                            itemCount: MemoryBox.length,
                             itemBuilder: (context, index) {
-                              var memories = Memorybox.toMap();
+                              var memories = MemoryBox.toMap();
                               return Card(
                                 child: ListTile(
                                   leading: Icon(Icons.notes),
