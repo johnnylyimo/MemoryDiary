@@ -68,6 +68,7 @@ class _EditMemoryState extends State<EditMemory> {
                       ),
                       onPressed: () {
                         box.put(widget.memoryKey, memoryController.text);
+                        Navigator.pop(context);
                       },
                     )
                   ],
