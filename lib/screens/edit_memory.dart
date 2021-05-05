@@ -17,6 +17,7 @@ class _EditMemoryState extends State<EditMemory> {
         centerTitle: true,
         title: Text('Edit memory'),
       ),
+      body: SafeArea(),
     );
   }
 }
