@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:hive/hive.dart';
-import 'package:memory_diary/screens/edit_memory.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:memory_diary/screens/edit_memory.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -32,7 +32,6 @@ class _HomeState extends State<Home> {
       ),
       body: SafeArea(
         child: Container(
-          decoration: BoxDecoration(border: Border.all()),
           width: MediaQuery.of(context).size.width,
           padding: EdgeInsets.all(20.0),
           child: SingleChildScrollView(
@@ -69,39 +68,40 @@ class _HomeState extends State<Home> {
                   height: MediaQuery.of(context).size.height,
                   child: ValueListenableBuilder(
                     valueListenable: MemoryBox.listenable(),
-                        builder: (context, Box<String>box, _),
-                        child:MemoryBox.length != 0
-                            ?  ListView.builder(
-                            itemCount: MemoryBox.length,
-                            itemBuilder: (context, index) {
-                              var memories = MemoryBox.toMap();
-                              return Card(
-                                child: ListTile(
-                                  leading: Icon(Icons.notes),
-                                  title: Text(
-                                    memories.values.elementAt(index),
-                                    maxLines: 2,
-                                  ),
-                                  onTap: () {
-                                    Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder: (context) => EditMemory(
-                                          memory:
-                                              memories.values.elementAt(index),
-                                          memoryKey:
-                                              memories.keys.elementAt(index),
+                    builder: (context, Box<String> box, _) {
+                      return MemoryBox.length != 0
+                          ? ListView.builder(
+                              itemCount: MemoryBox.length,
+                              itemBuilder: (context, index) {
+                                var memories = MemoryBox.toMap();
+                                return Card(
+                                  child: ListTile(
+                                    leading: Icon(Icons.notes),
+                                    title: Text(
+                                      memories.values.elementAt(index),
+                                      maxLines: 2,
+                                    ),
+                                    onTap: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => EditMemory(
+                                            memory: memories.values
+                                                .elementAt(index),
+                                            memoryKey:
+                                                memories.keys.elementAt(index),
+                                          ),
                                         ),
-                                      ),
-                                    );
-                                  },
-                                ),
-                              );
-                            },
-                          ),
-                      )
-                      : Text(
-                          'No Memory\nAdd your memory by click plus button below'),
+                                      );
+                                    },
+                                  ),
+                                );
+                              },
+                            )
+                          : Text(
+                              'No Memory\nAdd your memory by click plus button below');
+                    },
+                  ),
                 )
               ],
             ),
