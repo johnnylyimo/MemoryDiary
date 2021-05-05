@@ -28,7 +28,9 @@ class _EditMemoryState extends State<EditMemory> {
             key: _formKey,
             child: Column(
               children: [
-                TextFormField(),
+                TextFormField(
+                  controller: memoryController,
+                ),
               ],
             ),
           ),
