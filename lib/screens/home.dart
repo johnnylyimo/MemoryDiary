@@ -68,7 +68,7 @@ class _HomeState extends State<Home> {
                   height: MediaQuery.of(context).size.height,
                   child: box.length != 0
                       ? ListView.builder(
-                          itemCount: box.length,
+                          itemCount: Memorybox.length,
                           itemBuilder: (context, index) {
                             var memories = box.toMap();
                             return Card(
