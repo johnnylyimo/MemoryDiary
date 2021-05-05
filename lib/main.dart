@@ -19,7 +19,7 @@ void main() async {
 
   // initialize hive
   await Hive.initFlutter();
-  await Hive.openBox('test');
+  await Hive.openBox<String>('memory');
   runApp(ProviderScope(child: MyApp()));
 }
 

@@ -9,7 +9,12 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  Box<String> memoryBox;
+  Box<String> Memorybox;
+
+  @override
+  void initState() {
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {

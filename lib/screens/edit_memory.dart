@@ -13,7 +13,12 @@ class EditMemory extends StatefulWidget {
 class _EditMemoryState extends State<EditMemory> {
   var memoryController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
-  var box = Hive.box('test');
+  Box<String> box = Hive.box('memory');
+  @override
+  void initState() {
+    super.initState();
+    box = Hive.box('memory');
+  }
 
   @override
   Widget build(BuildContext context) {
