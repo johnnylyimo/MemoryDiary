@@ -15,6 +15,7 @@ class _EditMemoryState extends State<EditMemory> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
+        title: Text('Edit memory'),
       ),
     );
   }
