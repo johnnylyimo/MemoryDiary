@@ -54,7 +54,9 @@ class _EditMemoryState extends State<EditMemory> {
                           Colors.red,
                         ),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        box.delete(widget.memoryKey);
+                      },
                     ),
                     SizedBox(
                       width: 30.0,

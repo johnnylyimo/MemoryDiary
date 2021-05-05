@@ -10,6 +10,7 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   var box = Hive.box('test');
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
