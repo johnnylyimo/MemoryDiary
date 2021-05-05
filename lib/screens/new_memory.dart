@@ -40,6 +40,7 @@ class _NewMemoryState extends State<NewMemory> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               TextFormField(
+                autofocus: true,
                 controller: memoryController,
                 maxLines: 2,
                 keyboardType: TextInputType.multiline,
@@ -58,6 +59,14 @@ class _NewMemoryState extends State<NewMemory> {
                   box.add(memoryController.text);
                   memoryController.clear();
                   Navigator.pop(context);
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text(
+                        'New memory Added!',
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  );
                 },
               ),
             ],
