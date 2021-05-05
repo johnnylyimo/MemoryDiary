@@ -35,6 +35,7 @@ class _NewMemoryState extends State<NewMemory> {
             children: [
               TextFormField(
                 controller: new_memoryController,
+                maxLines: 2,
                 decoration: InputDecoration(
                   labelText: 'Write you memory here..',
                 ),
@@ -48,25 +49,8 @@ class _NewMemoryState extends State<NewMemory> {
                 onPressed: () {
                   // add item value with auto increment assign primary key index
                   box.add(new_memoryController.text);
-                  print('new item added');
                 },
               ),
-              ElevatedButton(
-                child: Text('Read'),
-                onPressed: () {
-                  box.isEmpty
-                      ? print('No item in the box')
-                      : print(box.getAt(0));
-                  print(box.toMap());
-                },
-              ),
-              ElevatedButton(
-                child: Text('Delete'),
-                onPressed: () {
-                  box.deleteAt(0);
-                  print('Item deleted!');
-                },
-              )
             ],
           ),
         ),
