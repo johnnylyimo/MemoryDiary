@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hive/hive.dart';
 
 class NewMemory extends StatefulWidget {
   const NewMemory({Key key}) : super(key: key);
@@ -10,6 +11,8 @@ class NewMemory extends StatefulWidget {
 class _NewMemoryState extends State<NewMemory> {
   var new_memoryController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
+  var box = Hive.box('test');
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,7 +39,27 @@ class _NewMemoryState extends State<NewMemory> {
               ),
               ElevatedButton(
                 child: Text('Submit'),
-                onPressed: () {},
+                onPressed: () {
+                  // add item value with auto increment assign primary key index
+                  box.add(new_memoryController.text);
+                  print('new item added');
+                },
+              ),
+              ElevatedButton(
+                child: Text('Read'),
+                onPressed: () {
+                  box.isEmpty
+                      ? print('No item in the box')
+                      : print(box.getAt(0));
+                  print(box.toMap());
+                },
+              ),
+              ElevatedButton(
+                child: Text('Delete'),
+                onPressed: () {
+                  box.deleteAt(0);
+                  print('Item deleted!');
+                },
               )
             ],
           ),
