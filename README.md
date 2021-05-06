@@ -1,16 +1,13 @@
-# memory_diary
+# MemoryDiary App
 
 A new Flutter project.
 
-## Getting Started
+## A MemoryDiary is mobile application developed in Flutter, allow you record day to day memories that happen in your life. It pretty amazing app.
 
-This project is a starting point for a Flutter application.
+Getting Started
+This project is so great for Flutter beginners who want to know how to save and retrieve data to their apps. In this app we use Hive Database package, that allow to store and retrieve data from the local smartphone storage, data are stored permanently. Not only that but also in this app you will learn various widgets like ElevatedButtons, Forms and so on.
 
-A few resources to get you started if this is your first Flutter project:
+print (" SHARING IS CARING ")
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+System.out.println ( " LET ME ALSO MAKE THE THE WORLD BETTER PLACE. ") ;
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
