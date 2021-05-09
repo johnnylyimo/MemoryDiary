@@ -31,6 +31,7 @@ class MyApp extends StatelessWidget {
       title: 'MemoryDiary',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        scaffoldBackgroundColor: Colors.purple.shade100,
       ),
       routes: {
         '/': (_) => SplashScreen(),
