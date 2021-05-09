@@ -21,7 +21,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue.shade50,
+      backgroundColor: Colors.purple.shade100,
       appBar: AppBar(
         centerTitle: true,
         title: Text('Memory Diary'),
