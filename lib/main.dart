@@ -9,8 +9,8 @@
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:memory_diary/screens/home.dart';
 import 'package:memory_diary/screens/new_memory.dart';
+import 'package:memory_diary/screens/splash_screen.dart';
 
 void main() async {
   // Before execute runApp execute following codes below
@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       routes: {
-        '/': (_) => Home(),
+        '/': (_) => SplashScreen(),
         '/new_memory': (_) => NewMemory(),
       },
       initialRoute: '/',
