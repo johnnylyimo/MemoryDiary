@@ -29,6 +29,7 @@ class _SplashScreenState extends State<SplashScreen> {
           children: [
             Text(
               'Memory Diary',
+              style: Theme.of(context).textTheme.headline4,
             ),
           ],
         ),
