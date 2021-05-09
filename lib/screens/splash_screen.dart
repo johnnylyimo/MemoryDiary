@@ -31,7 +31,9 @@ class _SplashScreenState extends State<SplashScreen> {
               'Memory Diary',
               style: Theme.of(context).textTheme.headline4,
             ),
-            FlutterLogo()
+            FlutterLogo(
+              size: 200.0,
+            )
           ],
         ),
       )),
