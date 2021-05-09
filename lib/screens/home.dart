@@ -41,7 +41,7 @@ class _HomeState extends State<Home> {
                 Align(
                   alignment: Alignment.center,
                   child: Container(
-                    color: Colors.blue.shade100,
+                    color: Colors.purple.shade200,
                     margin: EdgeInsets.all(10.0),
                     padding: EdgeInsets.all(20.0),
                     child: Text(
