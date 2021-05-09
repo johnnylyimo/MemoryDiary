@@ -26,6 +26,7 @@ class _SplashScreenState extends State<SplashScreen> {
       body: SafeArea(
           child: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Text(
               'Memory Diary',
