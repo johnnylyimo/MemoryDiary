@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:memory_diary/screens/home.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -11,26 +10,28 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
 
-    Future.delayed(Duration(seconds: 3), () {
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(
-          builder: (context) => Home(),
-        ),
-      );
-    });
+    //   Future.delayed(Duration(seconds: 3), () {
+    //     Navigator.pushReplacement(
+    //       context,
+    //       MaterialPageRoute(
+    //         builder: (context) => Home(),
+    //       ),
+    //     );
+    //   });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-          child: Column(
-        children: [
-          Text(
-            'Memory Diary',
-          ),
-        ],
+          child: Center(
+        child: Column(
+          children: [
+            Text(
+              'Memory Diary',
+            ),
+          ],
+        ),
       )),
     );
   }
