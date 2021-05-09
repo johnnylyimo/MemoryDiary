@@ -25,12 +25,13 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            Text()
-          ],
-        )
-      ),
+          child: Column(
+        children: [
+          Text(
+            'Memory Diary',
+          ),
+        ],
+      )),
     );
   }
 }
