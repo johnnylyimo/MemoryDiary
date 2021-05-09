@@ -37,7 +37,9 @@ class _SplashScreenState extends State<SplashScreen> {
             ),
             Text(
               'Remember the good times',
-              style: TextStyle(),
+              style: TextStyle(
+                fontSize: 20.0,
+              ),
             ),
           ],
         ),
