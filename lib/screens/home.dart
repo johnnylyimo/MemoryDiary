@@ -46,6 +46,9 @@ class _HomeState extends State<Home> {
                     padding: EdgeInsets.all(20.0),
                     child: Text(
                       'WORD OF THE DAY\nToday will be better than yesterday',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
                       textAlign: TextAlign.center,
                     ),
                   ),
