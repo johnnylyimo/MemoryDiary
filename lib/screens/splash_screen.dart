@@ -36,7 +36,7 @@ class _SplashScreenState extends State<SplashScreen> {
               ),
             ),
             FlutterLogo(
-              size: 300.0,
+              size: 200.0,
               style: FlutterLogoStyle.markOnly,
             ),
             Text(
