@@ -38,6 +38,7 @@ class _SplashScreenState extends State<SplashScreen> {
             FlutterLogo(
               size: 200.0,
               textColor: Colors.purple,
+              style: FlutterLogoStyle.markOnly,
             ),
             Text(
               'Remember the good times',
